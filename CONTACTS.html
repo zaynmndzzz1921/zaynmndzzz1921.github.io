@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dear Ygene</title>
+    <style>
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            border: 2px solid red;
+            border-radius: 10px;
+            position: relative;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .envelope:before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid red;
+        }
+        .envelope:after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid red;
+        }
+        .envelope .address {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .envelope .message {
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope">
+        <div class="address">To: [Ygene Mann Ambal.]</div>
+        <div class="message">[im sorry, i can't stay.]</div>
+    </div>
+</body>
+</html>
